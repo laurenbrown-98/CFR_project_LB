@@ -1,10 +1,10 @@
 rm(list=ls())
 require(data.table)
 
-d = fread('owid-rsa.csv')
+d = fread('./inputs/owid-rsa.csv')
 #owid_rsa = d[iso_code=='ZAF',]
 
-png('Rplot.png', width=2400, height=1600, res=240)
+png('./figs/Rplot.png', width=2400, height=1600, res=240)
 par(mfrow=c(3,1), mar=c(2,4,1,1))
 plot(d$date, d$new_cases_per_million, type='l', xlab='Date', ylab='Reported cases')
 lines(d$date, d$new_cases_smoothed_per_million, type='l', col='red')
