@@ -1,0 +1,5 @@
+Package: PlotCFR
+Type: Package
+Title: Plotting package for Covid-19 Case Fatality Rates in South Africa
+Version: 0.0.1.0
+RoxygenNote: 7.2.3
